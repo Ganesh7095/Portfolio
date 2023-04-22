@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="head1">
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logog.png" class="logo">
+            <ul>
+                <li><a href="#header" >Home</a></li>
+                <li><a href="#about" >About Me</a></li> 
+                <li><a href="#portfolio" >My Works</a></li>
+                <li><a href="#contact" >Contact</a></li>
+
+                
+            </ul>
+            </nav>
+            <div class="header-text"> 
+                <h1>Hi, I'm <span>Ganesh</span><br>Student of VNRVJIET</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img src="images/about.jpg">
+                </div>
+                <div class="col2">
+                    <h2>About Me</h2>
+                
+            <p>Myself Ganesh Medudhula persuing BTech In VNRVJIET
+                <br><br>About to graduate in 2023 and actively looking for 
+                <br><br>a job which can empower my skills and helps in my career growth
+                 
+            </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('technicalskills')">Technical Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills" >
+                <ul>
+                    <li>Communication Skills</li>
+                    <li>Problem Solving Skills</li>
+                    <li>Leadership Skills</li>
+                    <li>Focused</li>
+                    <li>Quick Learner</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="technicalskills">
+                <ul>
+                    <ol>Programming Languages</ol>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <ol>Web Technologies</ol>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </div>
+                <div class="tab-contents" id="education">
+                <ul>
+                    <ol>SSC</ol>
+                    <li>Alphores School of Gen Next</li>
+                    <ol>Diploma</ol>
+                    <li>Government Polytechnic MasabTank</li>
+                    <ol>Btech</ol>
+                    <li>VNR Vignana Jyothi Institute of Engineerring and Technology</li>    
+                </ul>
+                </div>
+            </div>
+        </div>
+     </div>
+ </div>
+
+  <div class="portfolio" id="portfolio">
+    <div class="container">
+        <h1>My Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/stock-price.png">
+                <div class="layer">
+                    <h3>Stock Price Predictor</h3>
+                    <p>It predicts the future price of the stock based on previous data</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/1517539168430.jpeg">
+                <div class="layer">
+                    <h3>Agro World</h3>
+                    <p>It helps the farmers to get better yeild on crops</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/facemask.png">
+                <div class="layer">
+                    <h3>Face Mask Detector</h3>
+                    <p>It detects whether the person is wearing a mask or not for security purposes</p>
+                </div>
+            </div>
+        </div>
+        <div class="btn" onclick="toggleSeeMore()"><a href="#portfolio"><div id="seeMoreToggle">See more</div></a></div>
+        <div><a class="btn btn2" onclick="showConfirmPrompt('images/Ganesh_CV (2).docx')" >Download Resume</a></div>
+
+    </div>
+  </div>
+  <div class="contact" id="contact">
+    <div class="container">
+        <h1>Contact Me</h1>
+        <div class="cont">
+        <p><i class="fas fa-phone-square-alt"></i>&nbsp &nbsp   8978128069</p>
+        <p><i class="fas fa-paper-plane"></i> &nbsp    ganeshmedudhula143@gmail.com</p>
+        </div>
+        <div class="socialicons">
+            <a href="https://www.facebook.com/campaign/landing.php?campaign_id=15461201666&extra_1=s%7Cc%7C589521732875%7Cb%7Cfacebook%20%27%7C&placement=&creative=589521732875&keyword=facebook%20%27&partner_id=googlesem&extra_2=campaignid%3D15461201666%26adgroupid%3D130924380175%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-327195741349%26loc_physical_ms%3D9062137%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gad=1&gclid=CjwKCAjw8-OhBhB5EiwADyoY1QphSHoUcMtN3WsKs4TAvevzjzsOURUHymuhnEDLKdebqo7Tiy0rfxoCzO4QAvD_BwE"><i class="fab fa-facebook" target="_blank"></i></a>
+            <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/ganesh-medudhula-295701264/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+    </div>
+  </div>
+  </div>
+
+  <script>
+ 
+    function showConfirmPrompt(url){
+        var cont=confirm("Do you want to download my resume");
+        if(cont){
+            const a = document.createElement('a');
+            a.style.display = 'none';
+            a.href = url;
+            a.download = 'Ganesh_Resume';
+            document.body.appendChild(a);
+            a.click();
+        }
+    }
+    function toggleSeeMore(){
+        var conent=document.getElementById("seeMoreToggle").innerHTML
+        if(conent.toString()==="See more"){
+            document.getElementById("seeMoreToggle").innerHTML="See less"
+        }else{
+            document.getElementById("seeMoreToggle").innerHTML="See more"
+        }
+    }
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname)
+    {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+  </script>  
+</body>
+</html>

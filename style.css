@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    transition: 1s;
+    background-position: fixed;
+}
+body{
+    background-color: black;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/backgg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+.container{
+    padding: 5px 10%;
+    font-size: 25px;
+   
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo
+{
+    width: 200px;
+    height: 200px;
+    
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    box-shadow: 10px;
+}
+nav ul li a{
+    color: rgb(9, 8, 8);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 4px;
+    background: rgb(164, 21, 147);
+    position: absolute;
+    left: -3px;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after
+{
+width: 125%;
+}
+.header-text{
+    display: flex;
+    margin-top: 10%;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.header-text span{
+    color: rgb(205, 33, 33);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.about{
+    padding: 80px 0;
+    color: rgb(110, 0, 212);
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col1{
+    flex-basis: 25%;
+}
+.col1 img{
+    width: 100%;
+    border-radius: 20px;
+    margin-left: 10%;
+}
+.col2{
+    flex-basis: 65%;
+    font-size: 17px;
+}
+.col2 h2{
+    font-size: 40px;
+    font-style: italic;
+    
+    color: rgb(255, 255, 255);
+}
+.col2 p{
+    margin-top: 20px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+.col2 .tab-titles p{
+    font-size: 20px;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+    cursor: pointer;
+}
+.tab-links{
+    font-size: 30px;
+    margin-right: 40px;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(218, 21, 195);
+    transition: 0.5s;
+    left: -2px;
+    bottom: -8px;
+    position: absolute;
+}
+.tab-links:hover::after{
+    width: 125%;
+}
+.tab-contents ul ol{
+    color: rgb(235, 54, 214); 
+}
+.tab-contents ul li{
+    list-style: circle;
+    margin: 10px 15px;
+    color: rgb(91, 196, 222);
+}
+.tab-contents{
+      display: none;
+} 
+.tab-contents.active-tab{
+    display: block;
+}
+.portfolio{
+    padding: 50px 10px ;
+margin-left: 20px;
+font-size: 20px;
+
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+}
+.layer h3{
+    font-size: 17px;
+   
+    font-weight: 500;
+    
+}
+.layer p{
+    padding: 24px 20px;
+    font-size: 14px;
+    color: rgb(255, 254, 254);
+    font-weight: 400;
+}
+.layer{
+    width: 0;
+    height: 100%;
+    background: linear-gradient(rgb(0,0,0,0.6),#9c2020); 
+    background-color: ;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-ite center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 40px;
+    transition: 0.5s;
+}
+.work:hover .layer{
+    width: 100%;
+}
+.btn{
+    display: block;
+    width: fit-content;
+    margin: 50px auto;
+    
+    padding: 14px 50px;
+    border: 1px solid rgb(212, 39, 39);
+    transition: 0.5s;
+}
+.btn a{
+    text-decoration: none;
+    color: white;}
+.btn:hover{
+    background: #ff004f;
+}
+.btn.btn2{
+    background-color: #ff004f;
+    text-decoration: none;
+    color: white;
+}
+.cont{
+    margin-top: 30px;
+}
+.contact p{
+    margin-top: 10px;
+    font-size: 15px;
+}
+.socialicons{
+    margin-top: 20px;
+   padding: 10px;
+}
+.socialicons a{
+    padding: 10px 20px;display: inline-block;
+    transition: transform 0.5s;
+}
+.socialicons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px)
+
+}
+
+@media only screen and (max-width: 600px) {
+    #header{
+        background-image: url("images/about.jpg");
+    }
+    
+}
+h1{
+    display: ;
+    position: absolute;
+}

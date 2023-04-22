@@ -1,0 +1,20 @@
+<html>
+   <body style="padding-top:50px">
+       <h3 id="event_demo">0</h3>
+       <input type="button" ondblclick="myFunction()" value="Click Me to add" />
+       <input type="button" onclick="fun2()" value="click to subtract" />
+   </body>
+   
+   <script>
+       function myFunction() {
+           var value = document.getElementById("event_demo").innerHTML
+           value = parseInt(value) + 1;
+           document.getElementById("event_demo").innerHTML = value;
+       }
+       function fun2() {
+           var value=document.getElementById("event_demo").innerHTML
+           value=parseInt(value)-1;
+           document.getElementById("event_demo").innerHTML = value;
+       }
+   </script>
+</html>
